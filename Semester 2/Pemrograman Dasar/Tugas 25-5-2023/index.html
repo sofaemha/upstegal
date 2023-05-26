@@ -5,12 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Pemrograman Dasar | Sofa Machabba Haeta | 6622600044 | Informatika S1 | 2B</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 80%;
+  padding: 15px;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+  
+    </style>
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
   </head>
-  <body>
+  <body class="text-center">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
       <symbol id="circle-half" viewBox="0 0 16 16">
         <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
       </symbol>
@@ -34,25 +78,67 @@
           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
             <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
               <use href="#sun-fill"></use>
-            </svg> Light
+            </svg> Light <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
           </button>
         </li>
         <li>
           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
             <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
               <use href="#moon-stars-fill"></use>
-            </svg> Dark
+            </svg> Dark <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
           </button>
         </li>
         <li>
           <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
             <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
               <use href="#circle-half"></use>
-            </svg> Auto
+            </svg> Auto <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
           </button>
         </li>
       </ul>
     </div>
+    <main class="main-container w-100 m-auto">
+      <div class="card text-center">
+          <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" id="myTab">
+                  <li class="nav-item">
+                      <a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#profile" class="nav-link" data-bs-toggle="tab">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#messages" class="nav-link" data-bs-toggle="tab">Messages</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="card-body">
+              <div class="tab-content">
+                  <div class="tab-pane fade show active" id="home">
+                      <h5 class="card-title">Home tab content</h5>
+                      <p class="card-text">Here is some example text to make up the tab's content. Replace it with your own text anytime.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="tab-pane fade" id="profile">
+                      <h5 class="card-title">Profile tab content</h5>
+                      <p class="card-text">Here is some example text to make up the tab's content. Replace it with your own text anytime.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="tab-pane fade" id="messages">
+                      <h5 class="card-title">Messages tab content</h5>
+                      <p class="card-text">Here is some example text to make up the tab's content. Replace it with your own text anytime.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
     <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
