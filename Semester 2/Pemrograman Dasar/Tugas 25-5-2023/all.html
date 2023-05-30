@@ -208,9 +208,9 @@
                 </div>
                 <div id="percepatan-rata">
                   <div class="input-group mb-3">
-                    <label class="input-group-text" for="percepatan-v1">Kecepatan (v) 1</label>
-                    <input type="number" class="form-control" id="percepatan-v1">
-                    <select class="form-select" id="percepatan-v1-jarak">
+                    <label class="input-group-text" for="percepatan-rata-v1">v1</label>
+                    <input type="number" class="form-control" id="percepatan-rata-v1">
+                    <select class="form-select" id="percepatan-rata-v1-jarak">
                       <option value="1">Km</option>
                       <option value="2">Hm</option>
                       <option value="3">Dam</option>
@@ -220,16 +220,16 @@
                       <option value="7">Mm</option>
                     </select>
                     <span class="input-group-text">/</span>
-                    <select class="form-select" id="percepatan-v1-waktu">
+                    <select class="form-select" id="percepatan-rata-v1-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
                     </select>
                   </div>
                   <div class="input-group mb-3">
-                    <label class="input-group-text" for="percepatan-v2">Kecepatan (v) 2</label>
-                    <input type="number" class="form-control" id="percepatan-v2">
-                    <select class="form-select" id="percepatan-v2-jarak">
+                    <label class="input-group-text" for="percepatan-rata-v2">v2</label>
+                    <input type="number" class="form-control" id="percepatan-rata-v2">
+                    <select class="form-select" id="percepatan-rata-v2-jarak">
                       <option value="1">Km</option>
                       <option value="2">Hm</option>
                       <option value="3">Dam</option>
@@ -239,33 +239,33 @@
                       <option value="7">Mm</option>
                     </select>
                     <label class="input-group-text">/</label>
-                    <select class="form-select" id="percepatan-v2-waktu">
+                    <select class="form-select" id="percepatan-rata-v2-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
                     </select>
                   </div>
                   <div class="input-group mb-3">
-                    <label class="input-group-text" for="percepatan-t1">Waktu (t) 1</label>
-                    <input type="number" class="form-control" id="percepatan-t1">
-                    <select class="form-select" id="percepatan-t1-waktu">
+                    <label class="input-group-text" for="percepatan-rata-t1">t1</label>
+                    <input type="number" class="form-control" id="percepatan-rata-t1">
+                    <select class="form-select" id="percepatan-rata-t1-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
                     </select>
                   </div>
                   <div class="input-group mb-3">
-                    <label class="input-group-text" for="percepatan-t2">Waktu (t) 2</label>
-                    <input type="number" class="form-control" id="percepatan-t2">
-                    <select class="form-select" id="percepatan-t2-waktu">
+                    <label class="input-group-text" for="percepatan-rata-t2">t2</label>
+                    <input type="number" class="form-control" id="percepatan-rata-t2">
+                    <select class="form-select" id="percepatan-rata-t2-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
                     </select>
                   </div>
                   <div class="input-group mb-3">
-                    <span class="input-group-text">Satuan Hasil</span>
-                    <select class="form-select" id="percepatan-hasil-jarak">
+                    <span class="input-group-text">Hasil</span>
+                    <select class="form-select" id="percepatan-rata-hasil-jarak">
                       <option value="1">Km</option>
                       <option value="2">Hm</option>
                       <option value="3">Dam</option>
@@ -275,12 +275,30 @@
                       <option value="7">Mm</option>
                     </select>
                     <span class="input-group-text">/</span>
-                    <select class="form-select" id="percepatan-hasil-waktu">
+                    <select class="form-select" id="percepatan-rata-hasil-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
                     </select>
                     <span class="input-group-text"><sup>2</sup></span>
+                  </div>
+                </div>
+                <div id="percepatan-sesaat">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Persamaan</span>
+                    <input type="text" class="form-control" id="percepatan-sesaat-persamaan">
+                    <span class="input-group-text">M</span>
+                    <span class="input-group-text">/</span>
+                    <span class="input-group-text">Detik</span>
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="percepatan-sesaat-t">t</label>
+                    <input type="number" class="form-control" id="percepatan-sesaat-t">
+                    <select class="form-select" id="percepatan-sesaat-t-waktu">
+                      <option selected value="1">Detik</option>
+                      <option value="2">Menit</option>
+                      <option value="3">Jam</option>
+                    </select>
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-2 px-5">Hitung</button>
