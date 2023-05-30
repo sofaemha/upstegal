@@ -61,6 +61,7 @@
     </style>
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body class="text-center">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -197,20 +198,20 @@
                 Kalkulator percepatan ini adalah kalkulator yang dapat menghitung percepatan rata-rata dan perceaptan sesaat.
                 Fitur ini terinspirasi dari situs <a href="https://kalkulator.id/kalkulator-percepatan/">Kalkulator ID - Kalkulator Percepatan</a>.
               </p>
-              <form class="w-75 m-auto mt-4 needs-validation" novalidate>
+              <form class="w-75 m-auto mt-4">
                 <div class="input-group mb-3">
                   <label class="input-group-text" for="percepatan-pilihan">Jenis</label>
-                  <select class="form-select" id="percepatan-pilihan">
+                  <select required class="form-select" id="percepatan-pilihan">
                     <option selected>Pilihan...</option>
                     <option value="1">Percepatan Rata-Rata</option>
                     <option value="2">Percepatan Sesaat</option>
                   </select>
                 </div>
-                <div id="percepatan-rata">
+                <div id="percepatan-rata" class="d-none">
                   <div class="input-group mb-3">
                     <label class="input-group-text" for="percepatan-rata-v1">v1</label>
-                    <input type="number" class="form-control" id="percepatan-rata-v1">
-                    <select class="form-select" id="percepatan-rata-v1-jarak">
+                    <input required type="number" class="form-control" id="percepatan-rata-v1">
+                    <select required class="form-select" id="percepatan-rata-v1-jarak">
                       <option value="1">Km</option>
                       <option value="2">Hm</option>
                       <option value="3">Dam</option>
@@ -220,7 +221,7 @@
                       <option value="7">Mm</option>
                     </select>
                     <span class="input-group-text">/</span>
-                    <select class="form-select" id="percepatan-rata-v1-waktu">
+                    <select required class="form-select" id="percepatan-rata-v1-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
@@ -228,8 +229,8 @@
                   </div>
                   <div class="input-group mb-3">
                     <label class="input-group-text" for="percepatan-rata-v2">v2</label>
-                    <input type="number" class="form-control" id="percepatan-rata-v2">
-                    <select class="form-select" id="percepatan-rata-v2-jarak">
+                    <input required type="number" class="form-control" id="percepatan-rata-v2">
+                    <select required class="form-select" id="percepatan-rata-v2-jarak">
                       <option value="1">Km</option>
                       <option value="2">Hm</option>
                       <option value="3">Dam</option>
@@ -239,7 +240,7 @@
                       <option value="7">Mm</option>
                     </select>
                     <label class="input-group-text">/</label>
-                    <select class="form-select" id="percepatan-rata-v2-waktu">
+                    <select required class="form-select" id="percepatan-rata-v2-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
@@ -247,8 +248,8 @@
                   </div>
                   <div class="input-group mb-3">
                     <label class="input-group-text" for="percepatan-rata-t1">t1</label>
-                    <input type="number" class="form-control" id="percepatan-rata-t1">
-                    <select class="form-select" id="percepatan-rata-t1-waktu">
+                    <input required type="number" class="form-control" id="percepatan-rata-t1">
+                    <select required class="form-select" id="percepatan-rata-t1-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
@@ -256,8 +257,8 @@
                   </div>
                   <div class="input-group mb-3">
                     <label class="input-group-text" for="percepatan-rata-t2">t2</label>
-                    <input type="number" class="form-control" id="percepatan-rata-t2">
-                    <select class="form-select" id="percepatan-rata-t2-waktu">
+                    <input required type="number" class="form-control" id="percepatan-rata-t2">
+                    <select required class="form-select" id="percepatan-rata-t2-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
@@ -265,7 +266,7 @@
                   </div>
                   <div class="input-group mb-3">
                     <span class="input-group-text">Hasil</span>
-                    <select class="form-select" id="percepatan-rata-hasil-jarak">
+                    <select required class="form-select" id="percepatan-rata-hasil-jarak">
                       <option value="1">Km</option>
                       <option value="2">Hm</option>
                       <option value="3">Dam</option>
@@ -275,7 +276,7 @@
                       <option value="7">Mm</option>
                     </select>
                     <span class="input-group-text">/</span>
-                    <select class="form-select" id="percepatan-rata-hasil-waktu">
+                    <select required class="form-select" id="percepatan-rata-hasil-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
@@ -283,18 +284,18 @@
                     <span class="input-group-text"><sup>2</sup></span>
                   </div>
                 </div>
-                <div id="percepatan-sesaat">
+                <div id="percepatan-sesaat" class="d-none">
                   <div class="input-group mb-3">
                     <span class="input-group-text">Persamaan</span>
-                    <input type="text" class="form-control" id="percepatan-sesaat-persamaan">
+                    <input required type="text" class="form-control" id="percepatan-sesaat-persamaan">
                     <span class="input-group-text">M</span>
                     <span class="input-group-text">/</span>
                     <span class="input-group-text">Detik</span>
                   </div>
                   <div class="input-group mb-3">
                     <label class="input-group-text" for="percepatan-sesaat-t">t</label>
-                    <input type="number" class="form-control" id="percepatan-sesaat-t">
-                    <select class="form-select" id="percepatan-sesaat-t-waktu">
+                    <input required type="number" class="form-control" id="percepatan-sesaat-t">
+                    <select required class="form-select" id="percepatan-sesaat-t-waktu">
                       <option selected value="1">Detik</option>
                       <option value="2">Menit</option>
                       <option value="3">Jam</option>
@@ -309,5 +310,29 @@
       </div>
     </main>
     <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+      (() => {
+        'use strict'
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelector("#percepatan-pilihan").addEventListener('change', function() {
+            var selectedValue = this.value
+            if (selectedValue == 1) {
+              document.getElementById("percepatan-rata").classList.add('d-block')
+              document.getElementById("percepatan-rata").classList.remove('d-none')
+              document.getElementById("percepatan-sesaat").classList.add('d-none')
+            } else if (selectedValue == 2) {
+              document.getElementById("percepatan-sesaat").classList.add('d-block')
+              document.getElementById("percepatan-sesaat").classList.remove('d-none')
+              document.getElementById("percepatan-rata").classList.add('d-none')
+            } else {
+              document.getElementById("percepatan-rata").classList.add('d-none')
+              document.getElementById("percepatan-sesaat").classList.add('d-none')
+              document.getElementById("percepatan-rata").classList.remove('d-block')
+              document.getElementById("percepatan-sesaat").classList.remove('d-block')
+            }
+          });
+        });
+      })()
+    </script>
   </body>
 </html>
