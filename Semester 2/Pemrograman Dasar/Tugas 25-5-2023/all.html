@@ -118,21 +118,21 @@
     <main class="main-container w-100 m-auto">
       <div class="card text-center">
         <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="myTab">
+          <ul class="nav nav-tabs card-header-tabs" id="Tabs">
             <li class="nav-item">
-              <a href="#beranda" class="nav-link active" data-bs-toggle="tab">Beranda</a>
+              <a href="#beranda" class="nav-link" data-bs-toggle="tab">Beranda</a>
             </li>
             <li class="nav-item">
               <a href="#bio" class="nav-link" data-bs-toggle="tab">Biodata</a>
             </li>
             <li class="nav-item">
-              <a href="#p1" class="nav-link" data-bs-toggle="tab">Percepatan</a>
+              <a href="#p1" class="nav-link active" data-bs-toggle="tab">Percepatan</a>
             </li>
           </ul>
         </div>
         <div class="card-body">
           <div class="tab-content">
-            <div class="tab-pane fade show active" id="beranda">
+            <div class="tab-pane fade" id="beranda">
               <h5 class="card-title">Tugas Pemrograman Dasar</h5>
               <p class="card-text w-75 text-justify m-auto">Tugas Pemrograman Dasar ini melibatkan pembuatan program yang dapat menghitung percepatan, kecepatan, dan energi potensial. Dengan menggunakan program ini, pengguna dapat dengan mudah menghitung nilai-nilai tersebut dengan memberikan input yang sesuai. <br/> <br/> Adapun tugas yang diberikan sebagai berikut :</p>
               <table class="table table-borderless w-75 m-auto">
@@ -191,10 +191,100 @@
                 </tbody>
               </table>
             </div>
-            <div class="tab-pane fade" id="p1">
-              <h5 class="card-title">Messages tab content</h5>
-              <p class="card-text">Here is some example text to make up the tab's content. Replace it with your own text anytime.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="tab-pane fade show active" id="p1">
+              <h5 class="card-title">Percepatan</h5>
+              <p class="card-text w-75 m-auto">
+                Kalkulator percepatan ini adalah kalkulator yang dapat menghitung percepatan rata-rata dan perceaptan sesaat.
+                Fitur ini terinspirasi dari situs <a href="https://kalkulator.id/kalkulator-percepatan/">Kalkulator ID - Kalkulator Percepatan</a>.
+              </p>
+              <form class="w-75 m-auto mt-4 needs-validation" novalidate>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="percepatan-pilihan">Jenis</label>
+                  <select class="form-select" id="percepatan-pilihan">
+                    <option selected>Pilihan...</option>
+                    <option value="1">Percepatan Rata-Rata</option>
+                    <option value="2">Percepatan Sesaat</option>
+                  </select>
+                </div>
+                <div id="percepatan-rata">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="percepatan-v1">Kecepatan (v) 1</label>
+                    <input type="number" class="form-control" id="percepatan-v1">
+                    <select class="form-select" id="percepatan-v1-jarak">
+                      <option value="1">Km</option>
+                      <option value="2">Hm</option>
+                      <option value="3">Dam</option>
+                      <option selected value="4">M</option>
+                      <option value="5">Dm</option>
+                      <option value="6">Cm</option>
+                      <option value="7">Mm</option>
+                    </select>
+                    <span class="input-group-text">/</span>
+                    <select class="form-select" id="percepatan-v1-waktu">
+                      <option selected value="1">Detik</option>
+                      <option value="2">Menit</option>
+                      <option value="3">Jam</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="percepatan-v2">Kecepatan (v) 2</label>
+                    <input type="number" class="form-control" id="percepatan-v2">
+                    <select class="form-select" id="percepatan-v2-jarak">
+                      <option value="1">Km</option>
+                      <option value="2">Hm</option>
+                      <option value="3">Dam</option>
+                      <option selected value="4">M</option>
+                      <option value="5">Dm</option>
+                      <option value="6">Cm</option>
+                      <option value="7">Mm</option>
+                    </select>
+                    <label class="input-group-text">/</label>
+                    <select class="form-select" id="percepatan-v2-waktu">
+                      <option selected value="1">Detik</option>
+                      <option value="2">Menit</option>
+                      <option value="3">Jam</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="percepatan-t1">Waktu (t) 1</label>
+                    <input type="number" class="form-control" id="percepatan-t1">
+                    <select class="form-select" id="percepatan-t1-waktu">
+                      <option selected value="1">Detik</option>
+                      <option value="2">Menit</option>
+                      <option value="3">Jam</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="percepatan-t2">Waktu (t) 2</label>
+                    <input type="number" class="form-control" id="percepatan-t2">
+                    <select class="form-select" id="percepatan-t2-waktu">
+                      <option selected value="1">Detik</option>
+                      <option value="2">Menit</option>
+                      <option value="3">Jam</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Satuan Hasil</span>
+                    <select class="form-select" id="percepatan-hasil-jarak">
+                      <option value="1">Km</option>
+                      <option value="2">Hm</option>
+                      <option value="3">Dam</option>
+                      <option selected value="4">M</option>
+                      <option value="5">Dm</option>
+                      <option value="6">Cm</option>
+                      <option value="7">Mm</option>
+                    </select>
+                    <span class="input-group-text">/</span>
+                    <select class="form-select" id="percepatan-hasil-waktu">
+                      <option selected value="1">Detik</option>
+                      <option value="2">Menit</option>
+                      <option value="3">Jam</option>
+                    </select>
+                    <span class="input-group-text"><sup>2</sup></span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2 px-5">Hitung</button>
+              </form>
             </div>
           </div>
         </div>
