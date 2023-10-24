@@ -1,0 +1,178 @@
+<!-- 
+
+    CREDIT
+    SOFA MACHABBA HAETA | NIM. 6622600044
+    Program Studi Informatika S1
+    Fakultas Teknik dan Ilmu Komputer
+    Universitas Pancasakti Tegal
+
+    mail@sofa.my.id
+    https://sofa.my.id/
+
+    Repositori : github.com/sofaemha/upstegal
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="id" class="scroll-smooth">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sofa Machabba Haeta | 6622600044</title>
+ 
+ 
+     <script type="text/javascript">
+         // alert("Website ini membutuhkan koneksi internet!")
+     </script>
+ 
+     <!-- Menggunakan library Tailwind CSS untuk dekorasi tampilan -->
+     <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+ <body class="p-5 bg-white dark:bg-gray-900 antialiased !p-0">
+ 
+     <!-- Navigasi -->
+     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+       <a href="https://flowbite.com/" class="flex items-center">
+           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sofa eMHa</span>
+       </a>
+       <div class="flex md:order-2">
+           <a href="https://github.com/sofaemha/upstegal" target="_blank">
+             <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Unduh Proyek</button>
+           </a>
+           <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="true">
+             <span class="sr-only">Open main menu</span>
+             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+             </svg>
+         </button>
+       </div>
+       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+           <li>
+             <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+           </li>
+           <li>
+             <a href="#tentang" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tentang</a>
+           </li>
+           <li>
+             <a href="#kutipan" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kutipan</a>
+           </li>
+           <li>
+             <a href="#kontak" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kontak</a>
+           </li>
+         </ul>
+       </div>
+       </div>
+     </nav>
+ 
+     <!-- Konten Utama -->
+     <main>
+ 
+         <section id="home" class="bg-white dark:bg-gray-900 mt-20">
+             <div class="mt-40 md:mt-36 flex items-center justify-center">
+               <div id="tooltip-jese" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                   Sofa Machabba Haeta
+                   <div class="tooltip-arrow" data-popper-arrow></div>
+               </div>
+               <img data-tooltip-target="tooltip-jese" class="w-60 h-60 rounded-full" src="https://avatars.githubusercontent.com/u/75196975?v=4" alt="Medium avatar">
+             </div>
+             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-8 lg:pb-16">
+                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Sofa Machabba Haeta</h1>
+                 <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Seorang website developer yang sedang menempuh pendidikan tinggi di Universitas Pancasakti Tegal. Dengan harapan mampu mendapatkan pekerjaan yang dapat menunjang kebutuhan hidup.</p>
+                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                     <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                         Tentang saya
+                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                         </svg>
+                     </a>
+                     <a href="https://sofa.my.id" target="_blank" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                         Situs Pribadi
+                     </a>  
+                 </div>
+             </div>
+         </section>
+ 
+         <section id="tentang" class="bg-white dark:bg-gray-900">
+             <div class="gap-16 items-center py-8 px-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Latar Belakang Pendidikan</h2>
+                     <p class="mb-4">Saya menempuh pendidikan dibangku Sekolah Menengah Kejuruan dengan jurusan Teknik Komputer dan Jaringan. Ada banyak sekali ilmu yang saya pelajari seperti pemrograman, jaringan, dan telekomunikasi.</p>
+                     <p>Dengan ilmu tersebut saya dapat menerapkan pada kehidupan sehari-hari sekaligus sebagai modal awal dalam bekerja maupuh ketika menempun pendidikan tinggi.</p>
+                 </div>
+                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Pengalaman Bekerja</h2>
+                     <p class="mb-4">Karena keterbatasan aturan akibat dari pandemi COVID-19 yang sedang marak, saya hanya mendapatkan 3 (tiga) bulan Praktik Kerja Lapangan (PKL) dengan hampir 1 (satu) bulan terbuang hanya untuk karantina.</p>
+                     <p>Adapun kemampuan yang saya miliki lebih condong dalam hal pemrograman khususnya desain website. Akan tetapi saya juga dapat mengoperasikan komputer, instalasi aplikasi dan jaringan, serta menganalisa dan memperbaiki komputer yang terindikasi rusak.</p>
+                 </div>
+             </div>
+         </section>
+ 
+         <section id="kutipan" class="bg-white dark:bg-gray-900">
+           <div class="max-w-screen-xl px-4 pt-8 py-16 mx-auto text-center lg:py-16 lg:px-6">
+               <figure class="max-w-screen-md mx-auto">
+                   <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                   </svg> 
+                   <blockquote>
+                       <p class="text-2xl font-medium text-gray-900 dark:text-white">"Tidak ada perjuangan tanpa adanya rasa sakit, akan tetapi percayalah bahwa rasa sakit itu hanya sementara dan rasa bahagia akan terasa selamanya."</p>
+                   </blockquote>
+                   <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                       <img class="w-6 h-6 rounded-full" src="https://avatars.githubusercontent.com/u/75196975?v=4" alt="profile picture">
+                       <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                           <div class="pr-3 font-medium text-gray-900 dark:text-white">Sofa Machabba Haeta</div>
+                           <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Mahasiswa UPS Tegal</div>
+                       </div>
+                   </figcaption>
+               </figure>
+           </div>
+         </section>
+ 
+         <section id="kontak" class="bg-white dark:bg-gray-900">
+             <div class="pt-8 pb-16 px-4 mx-auto mb-10 max-w-xl">
+                 <div class="w-full max-w-xl p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                     <form class="space-y-6" action="#">
+                         <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Hubungi saya via E-Mail</h5>
+                         <div>
+                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">E-Mail</label>
+                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="contoh@email.id" required>
+                         </div>
+                         <div>
+                             <label for="pesan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pesan</label>
+                             <textarea name="pesan" id="pesan" rows="5" placeholder="Tulis pesan anda disini..." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required></textarea>
+                         </div>
+                         <div class="flex items-start">
+                             <div class="flex items-start">
+                                 <div class="flex items-center h-5">
+                                     <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                                 </div>
+                                 <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya setuju dengan ketentuan yang berlaku</label>
+                             </div>
+                             <a href="#" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lapor kesalahan</a>
+                         </div>
+                         <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Kirim</button>
+                     </form>
+                 </div>
+             </div>
+         </section>
+ 
+     </main>
+ 
+     <!-- Footer -->
+     <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Tegal, 24 Oktober 2023 @ <a href="https://flowbite.com/" class="hover:underline">Sofa eMHa</a>. Tugas Desain Website.
+         </span>
+         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+             <li>
+                 <a onclick="(function(){document.body.scrollTop = 0; document.documentElement.scrollTop = 0;return false;})();return false;" class="mr-4 md:mr-6 cursor-pointer no-underline">Kembali ke Atas</a>
+             </li>
+         </ul>
+     </footer>
+ 
+     <!-- 
+         Menggunakan library milik flowbite agar lebih interaktif
+      -->
+     <script src="https://flowbite.com/docs/flowbite.min.js"></script>
+ </body>
+ </html>
