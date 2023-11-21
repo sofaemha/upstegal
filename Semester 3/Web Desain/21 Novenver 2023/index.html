@@ -1,64 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tugas Website 21 November 2023</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg">
-    <form>
-      <div class="mb-6">
-        <label
-          for="email"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >Your email</label
-        >
-        <input
-          type="email"
-          id="email"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="name@flowbite.com"
-          required
-        />
-      </div>
-      <div class="mb-6">
-        <label
-          for="password"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >Your password</label
-        >
-        <input
-          type="password"
-          id="password"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          required
-        />
-      </div>
-      <div class="flex items-start mb-6">
-        <div class="flex items-center h-5">
-          <input
-            id="remember"
-            type="checkbox"
-            value=""
-            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-            required
-          />
-        </div>
-        <label
-          for="remember"
-          class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-          >Remember me</label
-        >
-      </div>
-      <button
-        type="submit"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Submit
-      </button>
-    </form>
+<!-- 
 
-    <script src="https://flowbite.com/docs/flowbite.min.js"></script>
-  </body>
-</html>
+    CREDIT
+    SOFA MACHABBA HAETA | NIM. 6622600044
+    Program Studi Informatika S1
+    Fakultas Teknik dan Ilmu Komputer
+    Universitas Pancasakti Tegal
+
+    mail@sofa.my.id
+    https://sofa.my.id/
+
+    Repositori : github.com/sofaemha/upstegal
+    Preview : https://github.sofa.my.id/upstegal/Semester%203/Web%20Desain/24%20Oktober%202023/index.html
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="id" class="scroll-smooth">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sofa Machabba Haeta | 6622600044</title>
+ 
+ 
+     <script type="text/javascript">
+         // alert("Website ini membutuhkan koneksi internet!")
+     </script>
+ 
+     <!-- Menggunakan library Tailwind CSS untuk dekorasi tampilan -->
+     <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+ <body class="p-5 bg-white dark:bg-gray-900 antialiased !p-0">
+ 
+     <!-- Konten Utama -->
+     <main>
+ 
+         <section id="form" class="bg-white dark:bg-gray-900">
+             <div class="pt-8 pb-16 px-4 mx-auto mb-10 max-w-xl">
+                 <div class="w-full max-w-xl p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                     <form class="space-y-6" action="#">
+                         <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Biodata Singkat</h5>
+                         <div>
+                             <label for="nama-depan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Depan</label>
+                             <input type="nama-depan" name="nama-depan" id="nama-depan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Nama Depan" required>
+                         </div>
+                         <div>
+                             <label for="nama-belakang" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Depan</label>
+                             <input type="nama-belakang" name="nama-belakang" id="nama-belakang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Nama Belakang" required>
+                         </div>
+                         <div>
+                            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Jenis Kelamin</h3>
+                            <div class="flex items-center mb-4">
+                                <input id="pria" type="radio" value="" name="jenis-kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="pria" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Laki-Laki</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input checked id="wanita" type="radio" value="" name="jenis-kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="wanita" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Perempuan</label>
+                            </div>
+                         </div>
+                         <div>
+                            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Bahasa Asing</h3>
+                            <div class="flex items-center mb-4">
+                                <input id="bahasa-inggris" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="bahasa-inggris" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Bahasa Inggris</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="bahasa-arab" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="bahasa-arab" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Bahasa Arab</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="bahasa-jerman" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="bahasa-jerman" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Bahasa Jerman</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input checked id="bahasa-indonesia" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="bahasa-indonesia" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Bahasa Indonesia</label>
+                            </div>
+                         </div>
+                         <div>
+                             <label for="pesan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pesan</label>
+                             <textarea name="pesan" id="pesan" rows="5" placeholder="Tulis pesan anda disini..." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required></textarea>
+                         </div>
+                         <div class="flex items-start">
+                             <div class="flex items-start">
+                                 <div class="flex items-center h-5">
+                                     <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                                 </div>
+                                 <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya setuju dengan ketentuan yang berlaku</label>
+                             </div>
+                             <a href="#" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lapor kesalahan</a>
+                         </div>
+                         <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Kirim</button>
+                     </form>
+                 </div>
+             </div>
+         </section>
+ 
+     </main>
+ 
+     <!-- 
+         Menggunakan library milik flowbite agar lebih interaktif
+      -->
+     <script src="https://flowbite.com/docs/flowbite.min.js"></script>
+ </body>
+ </html>
