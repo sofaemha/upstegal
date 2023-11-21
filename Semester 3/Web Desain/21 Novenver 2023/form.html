@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Web Desain</h1>
+    <span>Selasa, 21 November 2023</span>
+    <hr>
+    <h2>Contoh Form Input</h2>
+    <form action="reg.php" method="post">
+        <fieldset>
+            <legend>User login info</legend>
+            <p><label for="idusername">Username:</label> <input id="idusername" type="text" name="username" placeholder="username anda" /></p>
+            <p><label for="idemail">Email:</label> <input id="idemail" type="email" name="email" placeholder="alamat email" /></p>
+            <p><label for="idpassword">Password:</label> <input id="idpassword" type="password" name="password" /></p>    
+        </fieldset>
+        <fieldset>
+            <legend>Data diri</legend>
+            <p><label for="idalamat">Alamat:</label> <input id="idalmat" type="text" names"alamat" placeholder="alamat rumah" /></p> <p><label for="idtangwallahir">Tanggal lahir: </label> <input id="idtanggallahir" type="date" name="tanggallahir" /></p>
+            <p><label for="idusia">Usia:</label> <input id="idusia" type="number" name="usia" placeholder="usia anda" /></p>
+            <p><label>Jenis kelamin: </label>
+            <input type="radio" name="jeniskelamin" value="pria"> Pria
+            <input type="radio" name="jeniskelamin" value="wanita"> Wanita</p>
+        </fieldset>
+        <fieldset>
+            <legend>Ketentuan</legend>
+            <p><label for="idagree">Saya bersedia mengikuti aturan forum</label> <input type="checkbox" name="bersedia ikut" value="ya" id="idagree"></p>
+            <p><input type="reset" value="Reset"> <input type="button" name="submit" value="submit" /></p>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <h3 class="margin-bottom-0">Nama Lengkap</h3>
+        <div class="margin-top-0">
+            <label for="namadepan">Nama Depan</label>
+            <br>
+            <input type="text" name="namadepan" id="namadepan" placeholder="Nama Depan">
+        </div>
+        <div class="margin-bottom-1">
+            <label for="namabelakang">Nama Belakang</label>
+            <br>
+            <input type="text" name="namabelakang" id="namabelakang" placeholder="Nama Belakang">
+        </div>
+        <hr>
+        <h3 class="margin-bottom-0">Jenis Kelamin</h3>
+        <div class="margin-top-0">
+            <label for="pria">Laki-Laki</label>
+            <input type="radio" name="jenis-kelamin" id="pria">
+            <br>
+            <label for="wanita">Perempuan</label>
+            <input type="radio" name="jenis-kelamin" id="wanita">
+        </div>
+        <hr>
+        <h3 class="margin-bottom-0">Bahasa Asing</h3>
+        <div class="margin-top-0">
+            <label for="pria">Inggris</label>
+            <input type="checkbox" name="jenis-kelamin" id="inggris">
+            <br>
+            <label for="wanita">Arab</label>
+            <input type="checkbox" name="jenis-kelamin" id="arab">
+            <br>
+            <label for="wanita">Jerman</label>
+            <input type="checkbox" name="jenis-kelamin" id="jerman">
+        </div>
+    </form>
+</body>
+</html>
